@@ -1,0 +1,462 @@
+{
+  "editor": "cursor",
+  "integrations": {
+    "Todoist.todoist": {
+      "version": "3.1.0"
+    }
+  },
+  "mode": "production",
+  "tools": {
+    "todoist.api.tasks.create.1": {
+      "desc": "Create a new task.",
+      "inputs": [
+        {
+          "body": {
+            "LOCATION": "body",
+            "TYPE": "OBJECT",
+            "schema": {
+              "properties": {
+                "assignee_id": {
+                  "required": false,
+                  "type": "any"
+                },
+                "content": {
+                  "required": true,
+                  "type": "string"
+                },
+                "deadline_date": {
+                  "required": false,
+                  "type": "any"
+                },
+                "description": {
+                  "required": false,
+                  "type": "any"
+                },
+                "due_date": {
+                  "required": false,
+                  "type": "any"
+                },
+                "due_datetime": {
+                  "required": false,
+                  "type": "any"
+                },
+                "due_lang": {
+                  "required": false,
+                  "type": "any"
+                },
+                "due_string": {
+                  "required": false,
+                  "type": "any"
+                },
+                "duration": {
+                  "required": false,
+                  "type": "any"
+                },
+                "duration_unit": {
+                  "required": false,
+                  "type": "any"
+                },
+                "labels": {
+                  "required": false,
+                  "type": "any"
+                },
+                "order": {
+                  "required": false,
+                  "type": "any"
+                },
+                "parent_id": {
+                  "required": false,
+                  "type": "any"
+                },
+                "priority": {
+                  "required": false,
+                  "type": "any"
+                },
+                "project_id": {
+                  "required": false,
+                  "type": "any"
+                },
+                "section_id": {
+                  "required": false,
+                  "type": "any"
+                }
+              },
+              "required": [
+                "content"
+              ]
+            }
+          }
+        }
+      ],
+      "integration": "Todoist.todoist@3.1.0",
+      "method_hash": "0acf49dbca8ca54730ba3b3882d58180999e731042fd87c5c96932a6976b4d07",
+      "output": {
+        "schema": {
+          "properties": {
+            "added_at": {
+              "required": true,
+              "type": "any"
+            },
+            "added_by_uid": {
+              "required": true,
+              "type": "any"
+            },
+            "assigned_by_uid": {
+              "required": true,
+              "type": "any"
+            },
+            "checked": {
+              "required": true,
+              "type": "boolean"
+            },
+            "child_order": {
+              "required": true,
+              "type": "integer"
+            },
+            "completed_at": {
+              "required": true,
+              "type": "any"
+            },
+            "completed_by_uid": {
+              "required": true,
+              "type": "any"
+            },
+            "completed_count": {
+              "required": true,
+              "type": "integer"
+            },
+            "content": {
+              "required": true,
+              "type": "string"
+            },
+            "day_order": {
+              "required": true,
+              "type": "integer"
+            },
+            "deadline": {
+              "required": true,
+              "type": "any"
+            },
+            "description": {
+              "required": true,
+              "type": "string"
+            },
+            "due": {
+              "required": true,
+              "type": "any"
+            },
+            "duration": {
+              "required": true,
+              "type": "any"
+            },
+            "id": {
+              "required": true,
+              "type": "string"
+            },
+            "is_collapsed": {
+              "required": true,
+              "type": "boolean"
+            },
+            "is_deleted": {
+              "required": true,
+              "type": "boolean"
+            },
+            "labels": {
+              "required": true,
+              "type": "[]STRING"
+            },
+            "note_count": {
+              "required": true,
+              "type": "integer"
+            },
+            "parent_id": {
+              "required": true,
+              "type": "any"
+            },
+            "postponed_count": {
+              "required": true,
+              "type": "integer"
+            },
+            "priority": {
+              "required": true,
+              "type": "integer"
+            },
+            "project_id": {
+              "required": true,
+              "type": "string"
+            },
+            "responsible_uid": {
+              "required": true,
+              "type": "any"
+            },
+            "section_id": {
+              "required": true,
+              "type": "any"
+            },
+            "updated_at": {
+              "required": true,
+              "type": "any"
+            },
+            "user_id": {
+              "required": true,
+              "type": "string"
+            }
+          },
+          "required": [
+            "user_id",
+            "id",
+            "project_id",
+            "section_id",
+            "parent_id",
+            "added_by_uid",
+            "assigned_by_uid",
+            "responsible_uid",
+            "labels",
+            "deadline",
+            "duration",
+            "is_collapsed",
+            "checked",
+            "is_deleted",
+            "added_at",
+            "completed_at",
+            "completed_by_uid",
+            "updated_at",
+            "due",
+            "priority",
+            "child_order",
+            "content",
+            "description",
+            "note_count",
+            "day_order",
+            "completed_count",
+            "postponed_count"
+          ]
+        },
+        "status": 200
+      },
+      "summary": "Create Task",
+      "type": "method"
+    },
+    "todoist.api.tasks.list": {
+      "desc": "Get all active tasks for the user.\n\nAll provided parameters are used to narrow down the list of tasks.\n\nThis is a paginated endpoint. See the [Pagination guide](#tag/Pagination) for details on using cursor-based pagination.",
+      "inputs": [
+        {
+          "project_id": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "section_id": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "parent_id": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "label": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "ids": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "cursor": {
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "STRING"
+          }
+        },
+        {
+          "limit": {
+            "DEFAULT": 50,
+            "LOCATION": "query",
+            "REQUIRED": false,
+            "TYPE": "INT"
+          }
+        }
+      ],
+      "integration": "Todoist.todoist@3.1.0",
+      "method_hash": "2084a99a152772b6424e285cb08b815e9aa50f21ec9e9a2f3efd7a79de37d144",
+      "output": {
+        "schema": {
+          "properties": {
+            "next_cursor": {
+              "required": true,
+              "type": "any"
+            },
+            "results": {
+              "items": {
+                "properties": {
+                  "added_at": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "added_by_uid": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "assigned_by_uid": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "checked": {
+                    "required": true,
+                    "type": "boolean"
+                  },
+                  "child_order": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "completed_at": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "completed_by_uid": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "completed_count": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "content": {
+                    "required": true,
+                    "type": "string"
+                  },
+                  "day_order": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "deadline": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "description": {
+                    "required": true,
+                    "type": "string"
+                  },
+                  "due": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "duration": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "id": {
+                    "required": true,
+                    "type": "string"
+                  },
+                  "is_collapsed": {
+                    "required": true,
+                    "type": "boolean"
+                  },
+                  "is_deleted": {
+                    "required": true,
+                    "type": "boolean"
+                  },
+                  "labels": {
+                    "required": true,
+                    "type": "[]STRING"
+                  },
+                  "note_count": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "parent_id": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "postponed_count": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "priority": {
+                    "required": true,
+                    "type": "integer"
+                  },
+                  "project_id": {
+                    "required": true,
+                    "type": "string"
+                  },
+                  "responsible_uid": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "section_id": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "updated_at": {
+                    "required": true,
+                    "type": "any"
+                  },
+                  "user_id": {
+                    "required": true,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "user_id",
+                  "id",
+                  "project_id",
+                  "section_id",
+                  "parent_id",
+                  "added_by_uid",
+                  "assigned_by_uid",
+                  "responsible_uid",
+                  "labels",
+                  "deadline",
+                  "duration",
+                  "is_collapsed",
+                  "checked",
+                  "is_deleted",
+                  "added_at",
+                  "completed_at",
+                  "completed_by_uid",
+                  "updated_at",
+                  "due",
+                  "priority",
+                  "child_order",
+                  "content",
+                  "description",
+                  "note_count",
+                  "day_order",
+                  "completed_count",
+                  "postponed_count"
+                ],
+                "type": "object"
+              },
+              "required": true,
+              "type": "array"
+            }
+          },
+          "required": [
+            "results",
+            "next_cursor"
+          ]
+        },
+        "status": 200
+      },
+      "summary": "Get Tasks",
+      "type": "method"
+    }
+  },
+  "version": "2.19.12"
+}

@@ -1,0 +1,519 @@
+{
+  "methods": [
+    {
+      "method_uuid": "",
+      "method_name": "Accept a workspace invitation using the invite code",
+      "canonical_id": "todoist.api.accept.update"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Add tasks using natural language with dates, projects, and labels",
+      "canonical_id": "todoist.api.quick.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Archive a project for yourself or your workspace",
+      "canonical_id": "todoist.api.archive.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Archive a specific section",
+      "canonical_id": "todoist.api.archive.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Close a task and schedule its next occurrence if recurring",
+      "canonical_id": "todoist.api.close.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a comment on a project or task",
+      "canonical_id": "todoist.api.comments.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new folder in a workspace",
+      "canonical_id": "todoist.api.folders.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new project",
+      "canonical_id": "todoist.api.projects.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new reminder for a task",
+      "canonical_id": "todoist.api.reminders.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new section",
+      "canonical_id": "todoist.api.sections.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new task",
+      "canonical_id": "todoist.api.tasks.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a new workspace",
+      "canonical_id": "todoist.api.workspaces.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a personal label",
+      "canonical_id": "todoist.api.labels.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Create a Stripe Checkout session for usage billing top-ups",
+      "canonical_id": "todoist.api.topUp.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a folder and move its projects",
+      "canonical_id": "todoist.api.folders.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a project and all its associated sections and tasks",
+      "canonical_id": "todoist.api.projects.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a reminder by its ID",
+      "canonical_id": "todoist.api.reminders.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a section and all associated tasks",
+      "canonical_id": "todoist.api.sections.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a specific comment by its ID",
+      "canonical_id": "todoist.api.comments.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a task and its subtasks",
+      "canonical_id": "todoist.api.tasks.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a workspace by its ID",
+      "canonical_id": "todoist.api.workspaces.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete a workspace invitation",
+      "canonical_id": "todoist.api.invitations.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Delete an uploaded file by its URL",
+      "canonical_id": "todoist.api.uploads.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Download a backup archive",
+      "canonical_id": "todoist.api.backups.download"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Export a project template as a CSV file",
+      "canonical_id": "todoist.api.file.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch active location reminders, optionally for a specific task",
+      "canonical_id": "todoist.api.locationReminders.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch active reminders, optionally filtered by task ID",
+      "canonical_id": "todoist.api.reminders.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch active sections, optionally filtered by project",
+      "canonical_id": "todoist.api.sections.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch all workspaces the user is a member of",
+      "canonical_id": "todoist.api.workspaces.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch collaborators for a specific project",
+      "canonical_id": "todoist.api.collaborators.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch paginated activity logs with filtering",
+      "canonical_id": "todoist.api.activities.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch tasks with optional filters and pagination",
+      "canonical_id": "todoist.api.tasks.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Fetch user projects, filter by folder or workspace",
+      "canonical_id": "todoist.api.projects.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Find tasks matching your search query and language",
+      "canonical_id": "todoist.api.filter.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get a project template as a shareable URL",
+      "canonical_id": "todoist.api.url.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get all active workspace projects",
+      "canonical_id": "todoist.api.active.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get all pending workspace invitations",
+      "canonical_id": "todoist.api.all.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get completed tasks within a date range",
+      "canonical_id": "todoist.api.byDueDate.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get information about the current user",
+      "canonical_id": "todoist.api.user.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get or create an email for a project or task",
+      "canonical_id": "todoist.api.emails.update"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get unique shared labels from active tasks",
+      "canonical_id": "todoist.api.shared.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get user productivity statistics and karma score",
+      "canonical_id": "todoist.api.stats.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Get workspace plan and usage details",
+      "canonical_id": "todoist.api.planDetails.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Import a saved template into an existing project",
+      "canonical_id": "todoist.api.importIntoProjectFromTemplateId.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Import a template into a project from a file",
+      "canonical_id": "todoist.api.importIntoProjectFromFile.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Initiate Stripe plan cancellation and get redirect URL",
+      "canonical_id": "todoist.api.cancelPlanWithRedirectToStripe.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Invite users to a workspace by email",
+      "canonical_id": "todoist.api.users.invite"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Join a workspace project as a user",
+      "canonical_id": "todoist.api.join.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Join a workspace using a link or ID, or automatically by domain",
+      "canonical_id": "todoist.api.join.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "List archived projects within a workspace",
+      "canonical_id": "todoist.api.archived.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "List available project roles and their permissions",
+      "canonical_id": "todoist.api.permissions.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "List completed tasks by date range",
+      "canonical_id": "todoist.api.byCompletionDate.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "List pending workspace invitations by email",
+      "canonical_id": "todoist.api.invitations.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Migrate personal access tokens to OAuth",
+      "canonical_id": "todoist.api.migratePersonalToken.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Move a task to a different project, section, or parent",
+      "canonical_id": "todoist.api.move.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Reactivate a canceled subscription",
+      "canonical_id": "todoist.api.reactivatePlan.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Reject a workspace invitation",
+      "canonical_id": "todoist.api.invitations.reject"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Remove a location reminder by its ID",
+      "canonical_id": "todoist.api.locationReminders.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Remove a personal label and all its associated tasks",
+      "canonical_id": "todoist.api.labels.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Remove a shared label from all active tasks",
+      "canonical_id": "todoist.api.shared.remove"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Remove a user from a workspace",
+      "canonical_id": "todoist.api.users.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Remove an email from a Todoist object",
+      "canonical_id": "todoist.api.emails.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Rename a shared label across all tasks",
+      "canonical_id": "todoist.api.rename.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Reopen a task and its ancestors",
+      "canonical_id": "todoist.api.reopen.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Restore a project to an active state",
+      "canonical_id": "todoist.api.unarchive.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Restore a section to be active again",
+      "canonical_id": "todoist.api.unarchive.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a list of your archived projects",
+      "canonical_id": "todoist.api.archived.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific active task by its ID",
+      "canonical_id": "todoist.api.tasks.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific comment by its ID",
+      "canonical_id": "todoist.api.comments.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific folder by its ID",
+      "canonical_id": "todoist.api.folders.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific location reminder by its ID",
+      "canonical_id": "todoist.api.locationReminders.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific personal label by its ID",
+      "canonical_id": "todoist.api.labels.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific project by its ID",
+      "canonical_id": "todoist.api.projects.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific reminder by its ID",
+      "canonical_id": "todoist.api.reminders.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a specific section by its ID",
+      "canonical_id": "todoist.api.sections.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve a workspace by its unique identifier",
+      "canonical_id": "todoist.api.workspaces.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve all folders within a workspace",
+      "canonical_id": "todoist.api.folders.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve all user labels with pagination",
+      "canonical_id": "todoist.api.labels.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve comments for a specific task or project",
+      "canonical_id": "todoist.api.comments.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve current user's subscription status",
+      "canonical_id": "todoist.api.getSubscriptionInfo.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve users for a specific workspace or all workspaces you belong to",
+      "canonical_id": "todoist.api.users.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Retrieve your Todoist data backups",
+      "canonical_id": "todoist.api.backups.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Revoke an access token",
+      "canonical_id": "todoist.api.accessTokens.delete"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Revoke an access token according to RFC 7009",
+      "canonical_id": "todoist.api.revoke.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Search active sections by name, optionally filtered by project",
+      "canonical_id": "todoist.api.search.list.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Search active user projects by name",
+      "canonical_id": "todoist.api.search.list"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Search user labels by name",
+      "canonical_id": "todoist.api.search.list.2"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Set a reminder for a task at a specific location",
+      "canonical_id": "todoist.api.locationReminders.create.1"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Translate object IDs between v1 and v2 formats",
+      "canonical_id": "todoist.api.idMappings.get"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a comment by its ID",
+      "canonical_id": "todoist.api.comments.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a location reminder by its ID",
+      "canonical_id": "todoist.api.locationReminders.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a personal label by ID",
+      "canonical_id": "todoist.api.labels.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a project's details",
+      "canonical_id": "todoist.api.projects.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a specific section's details",
+      "canonical_id": "todoist.api.sections.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update a workspace user's role",
+      "canonical_id": "todoist.api.users.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update an existing folder's details",
+      "canonical_id": "todoist.api.folders.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update an existing reminder",
+      "canonical_id": "todoist.api.reminders.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update an existing task",
+      "canonical_id": "todoist.api.tasks.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update an existing workspace",
+      "canonical_id": "todoist.api.workspaces.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Update user notification preferences by channel",
+      "canonical_id": "todoist.api.notificationSetting.update"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Upload a file to create a new project template",
+      "canonical_id": "todoist.api.createProjectFromFile.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Upload a file to your Todoist",
+      "canonical_id": "todoist.api.uploads.create"
+    },
+    {
+      "method_uuid": "",
+      "method_name": "Upload or delete a workspace logo",
+      "canonical_id": "todoist.api.logo.create"
+    }
+  ]
+}
